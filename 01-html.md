@@ -13,6 +13,11 @@ What is HTML?
 - HTML elements tell the browser how to display the content
 - HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
 
+---
+
+Mark up example
+![Editor-markup](./images/copyediting-markup.webp)
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -72,7 +77,7 @@ The Document Object Model (DOM) is a programming API for HTML and XML documents.
 
 With the Document Object Model, programmers can create and build documents, navigate their structure, and add, modify, or delete elements and content. Anything found in an HTML or XML document can be accessed, changed, deleted, or added using the Document Object Model, with a few exceptions - in particular, the DOM interfaces for the internal subset and external subset have not yet been specified.
 
-## What the Document Object Model is
+## The Document Object Model
 
 The Document Object Model is a programming API for documents. The object model itself closely resembles the structure of the documents it models. For instance, consider this table, taken from an HTML document:
 
@@ -97,7 +102,15 @@ The Document Object Model represents this table like this:
 
 ## Setup A Simple Website
 
-1). Create a new folder;
+1). Go to [Code Pen](https://codepen.io/)
+
+2). Sign Up
+
+3). Once you're signed up and logged in Click Pen
+
+4). New Pen.
+
+<!-- 1). Create a new folder;
 
 ```sh
 mkdir mySimpleSite
@@ -119,9 +132,9 @@ touch index.html
 
 ```sh
 code .
-```
+``` -->
 
-5). Paste the following code in the ```index.html``` file.
+5). Paste the following code in the ```HTML``` file.
 
 ```html
 <!DOCTYPE html>
@@ -158,18 +171,18 @@ the browser that everything inside it is HTML.
 
     </head>
     <body>
-        Learning HTML is cool!
+        Learning HTML is fun!
     </body>
 </html>
 ```
 
-8). Right-click on the ```index.html``` file and click on the ```Copy Path``` option. Now paste it in the browser.
+8). Your code should display automatically in the on the page.
 
 *Notice the HTML tags aren't visible, only the content.*
 
 ---
 
-## Commit your work
+<!-- ## Commit your work
 
 1). Initialize a version control (git) for your project.
 
@@ -184,7 +197,7 @@ git add .
 git commit -m "adds initial files"
 ```
 
----
+--- -->
 
 ## Head Tags
 
