@@ -1,4 +1,4 @@
-# EXERCISE 02: Introduction to Javascript
+# EXERCISE 04: Introduction to Javascript
 
 In this lesson, we will discuss what JavaScript is. We will also go over some basic grammar, variable declarations, data types, and literals.
 
