@@ -1,4 +1,4 @@
-# EXERCISE 03: Loops
+# EXERCISE 05: Loops
 
 In this lesson, we will take a look at what JavaScript loops are. We will also go over the syntax and use cases for a For Loop.
 
