@@ -28,6 +28,9 @@ Awesome.Now let's get started.
     <h1></h1>
     <h2 id="winner"></h2>
     <div id="board"></div>
+    <section class="controls">
+      <button id="reset">Reset</button>
+    </section>
 </body>
 ```
 
@@ -161,12 +164,37 @@ body {
     border: 5px solid navy;
 }
 
-.red-piece {
+.player1-piece {
     background-color: red;
 }
 
-.yellow-piece {
+.player2-piece {
     background-color: yellow;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.controls button {
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.restart {
+    background-color: #498AFB;
+}
+
+#reset {
+    background-color: #FF3860;
 }
 
 ```
@@ -192,9 +220,9 @@ h1 {
 Now let's add the JS to take care of the rest. Copy and paste the following code snippet into the area on Code Pen, labeled `JS`.
 
 ```js
-var playerRed = "R";
-var playerYellow = "Y";
-var currPlayer = playerRed;
+var player1Color = "Red";
+var player2Color = "Yellow";
+var currPlayer1 = true;
 
 var gameOver = false;
 var board;
@@ -202,9 +230,12 @@ var board;
 var rows = 6;
 var columns = 7;
 var currColumns = []; //keeps track of which row each column is at.
+var tiles = [];
 
 window.onload = function() {
     setGame();
+    const resetButton = document.querySelector('#reset');
+    resetButton.addEventListener('click', resetGame);
 }
 
 function setGame() {
@@ -222,9 +253,23 @@ function setGame() {
             tile.classList.add("tile");
             tile.addEventListener("click", setPiece);
             document.getElementById("board").append(tile);
+            tiles.push(tile);
         }
         board.push(row);
     }
+}
+
+function resetGame(){
+    board = [...Array(rows)].map(row => new Array(columns));
+    currColumns = [5, 5, 5, 5, 5, 5, 5];
+    tiles.forEach(tile => {
+      tile.classList.remove('player1-piece');
+      tile.classList.remove('player2-piece');
+    });
+  
+    currPlayer1 = true;
+    gameOver = false;
+    document.getElementById("winner").innerText = "";
 }
 
 function setPiece() {
@@ -244,80 +289,41 @@ function setPiece() {
         return;
     }
 
-    board[r][c] = currPlayer; //update JS board
+    board[r][c] = currPlayer1 ? player1Color : player2Color; //update JS board
     let tile = document.getElementById(r.toString() + "-" + c.toString());
-    if (currPlayer == playerRed) {
-        tile.classList.add("red-piece");
-        currPlayer = playerYellow;
-    }
-    else {
-        tile.classList.add("yellow-piece");
-        currPlayer = playerRed;
-    }
+    tile.classList.add(`player${currPlayer1 ? 1 : 2}-piece`);
+  
+    if (checkWinner(r, c, currPlayer1 ? player1Color : player2Color)) 
+      setWinner(r, c);
 
+    currPlayer1 = !currPlayer1;
     r -= 1; //update the row height for that column
     currColumns[c] = r; //update the array
 
-    checkWinner();
 }
 
-function checkWinner() {
-     // horizontal
-     for (let r = 0; r < rows; r++) {
-         for (let c = 0; c < columns - 3; c++){
-            if (board[r][c] != ' ') {
-                if (board[r][c] == board[r][c+1] && board[r][c+1] == board[r][c+2] && board[r][c+2] == board[r][c+3]) {
-                    setWinner(r, c);
-                    return;
-                }
-            }
-         }
-    }
-
-    // vertical
-    for (let c = 0; c < columns; c++) {
-        for (let r = 0; r < rows - 3; r++) {
-            if (board[r][c] != ' ') {
-                if (board[r][c] == board[r+1][c] && board[r+1][c] == board[r+2][c] && board[r+2][c] == board[r+3][c]) {
-                    setWinner(r, c);
-                    return;
-                }
-            }
-        }
-    }
-
-    // anti diagonal
-    for (let r = 0; r < rows - 3; r++) {
-        for (let c = 0; c < columns - 3; c++) {
-            if (board[r][c] != ' ') {
-                if (board[r][c] == board[r+1][c+1] && board[r+1][c+1] == board[r+2][c+2] && board[r+2][c+2] == board[r+3][c+3]) {
-                    setWinner(r, c);
-                    return;
-                }
-            }
-        }
-    }
-
-    // diagonal
-    for (let r = 3; r < rows; r++) {
-        for (let c = 0; c < columns - 3; c++) {
-            if (board[r][c] != ' ') {
-                if (board[r][c] == board[r-1][c+1] && board[r-1][c+1] == board[r-2][c+2] && board[r-2][c+2] == board[r-3][c+3]) {
-                    setWinner(r, c);
-                    return;
-                }
-            }
-        }
-    }
+function checkWinner(r, c, currentColor) {
+  //List of directions a connect 4 can be made towards
+  let dirs = [[1, 1], [1, 0], [1, -1], [0, 1]];
+  //Check each direction
+  if (dirs.some(dir => {
+    let countF = 1, countB = 1;
+    
+    //Counts the number of forward spaces (stops at 4 since that's the win condition)
+    //Note: "( ... || [])[...]" is used as a shortcut to handle out of index errors on accessing a multi-leveled array
+    while(countF < 4 && (board[r + dir[0] * countF] || [])[c + dir[1] * countF] == currentColor)
+      countF += 1;
+    //Counts the number of backward spaces (stops at 4 (including forward count) since that's the win condition)
+    while(countF + countB - 1 < 4 && (board[r - dir[0] * countB] || [])[c - dir[1] * countB] == currentColor)
+      countB += 1;
+    
+    return countF + countB - 1 >= 4;
+  })) setWinner();
 }
 
-function setWinner(r, c) {
+function setWinner() {
     let winner = document.getElementById("winner");
-    if (board[r][c] == playerRed) {
-        winner.innerText = "Red Wins";             
-    } else {
-        winner.innerText = "Yellow Wins";
-    }
+    winner.innerText = (currPlayer1 ? player1Color : player2Color) +  " Wins";
     gameOver = true;
 }
 ```
