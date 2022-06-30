@@ -113,7 +113,7 @@ The Document Object Model represents this table like this:
 
 1). Go to [Code Pen](https://codepen.io/)
 
-2). Sign Up
+2). Sign Up (not necessary, but you can't save your code without creating an account)
 
 3). Once you're signed up and logged in Click Pen
 
