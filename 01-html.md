@@ -1,12 +1,20 @@
-# Exercise 1: What is HTML?
+# 01: HTML Introduction
 
-## HTML Introduction
+## What is HTML?
 
-HTML is the standard markup language for creating Web pages.
+There are 3 main tools that are used when creating websites. They are **HTML, CSS, and JavaScript**. HTML is the foundation of all websites, and provides the structure for the content on the website.
 
-[Coding Rooms](https://app.codingrooms.com/app?joinCode=C-6dRxGQT)
+![HTML, CSS, JavaScript](/images/big-picture.png)
 
-What is HTML?
+The image above is an example of the role that each of these tools play.
+
+HTML stands for Hyper Text Markup Language and can be considered the skeleton or the structure of the website. Without this, nothing else can exist or would have any relevance.
+
+CSS stand for Cascading Style Sheets and it provides the rules for how each piece of content is styled. For example, the boy's brown hair, blue eyes, red shirt, etc, would be considered CSS.
+
+JavaScript provides the functionality on a website. In our example that functionality would be the ollie. JavaScript is what we use to take our websites to the next level.
+
+For now we'll just focus on HTML. So what is HTML...
 
 - HTML stands for Hyper Text Markup Language
 - HTML is the standard markup language for creating Web pages
@@ -15,9 +23,8 @@ What is HTML?
 - HTML elements tell the browser how to display the content
 - HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
 
----
+The "Markup" in HTML is based on the mark up that was put in manuscripts. Editors would "mark up" the manuscript to specify structure and layout to the publishers or changes to the author.
 
-Mark up example
 ![Editor-markup](./images/copyediting-markup.webp)
 
 ```html
@@ -389,3 +396,5 @@ Let’s say our rent each month is $1500. $150 for utilities, $350 for groceries
 ## Bonus
 
 Style the table by adding a border of "1" and cellpadding of "10".
+
+[Coding Rooms](https://app.codingrooms.com/app?joinCode=C-6dRxGQT)
