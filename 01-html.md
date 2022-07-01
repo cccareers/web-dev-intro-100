@@ -23,7 +23,9 @@ For now we'll just focus on HTML. So what is HTML...
 - HTML elements tell the browser how to display the content
 - HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
 
-The "Markup" in HTML is based on the mark up that was put in manuscripts. Editors would "mark up" the manuscript to specify structure and layout to the publishers or changes to the author.
+Fun Fact:
+
+*The "Markup" in HTML is based on the mark up that was put in manuscripts. Editors would "mark up" the manuscript to specify structure and layout to the publishers or changes to the author.*
 
 ![Editor-markup](./images/copyediting-markup.webp)
 
