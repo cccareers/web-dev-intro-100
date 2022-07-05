@@ -1,5 +1,7 @@
 # 01: HTML Introduction
 
+Use this [link](https://creating-coding-careers.gitbook.io/the-basics/) to follow along on GitBook
+
 ## What is HTML?
 
 There are 3 main tools that are used when creating websites. They are **HTML, CSS, and JavaScript**. HTML is the foundation of all websites, and provides the structure for the content on the website.
