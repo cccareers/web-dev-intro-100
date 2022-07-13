@@ -8,7 +8,7 @@ This exercise will walk you through building a simple Tic Tac Toe game. In addit
 
 ### Setup
 
-1. Go to [codepen.io](https://codepen.io/trending) and click on Pen.
+1. Go to [codepen.io](https://codepen.io/trending) and click on **Start Coding**.
 
 That's it! That's all the setup you'll need. Code Pen is a social development environment for developers and designers. It allows us to write code and see the results as we build it. Neat huh!
 
@@ -29,7 +29,7 @@ Ok, Let's get started.
     </body>
 ```
 
-This block of code includes the `<body>` element. Inside of the body tag element is where we will add all of our other elements will live. This block of code also includes a `<section>` element and an `<h1>` with the heading Tic Tac Toe.
+This block of code includes the `<body>` element. Inside the body element is where all of our other elements will live. This block of code also includes a `<section>` element and an `<h1>` with the heading Tic Tac Toe.
 
 2).
 
@@ -163,25 +163,7 @@ Add to remaining CSS.
 
 Now Let's add some JavaScript. Add the following to the JS section.
 
-```js
-window.addEventListener('DOMContentLoaded', () => {
-    const tiles = Array.from(document.querySelectorAll('.tile'));
-    const playerDisplay = document.querySelector('.display-player');
-    const resetButton = document.querySelector('#reset');
-    const announcer = document.querySelector('.announcer');
-
-    let board = ['', '', '', '', '', '', '', '', ''];
-    let currentPlayer = 'X';
-    let isGameActive = true;
-```
-
 The following code add 3 variables for the `board`, `currentPlayer`, and `isGameActive` which determines whether there is a winner or if the game is still in progress.
-
-
-
-
-
-
 
 ```js
 window.addEventListener('DOMContentLoaded', () => {
