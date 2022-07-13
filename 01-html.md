@@ -1,4 +1,4 @@
-# 01: HTML Introduction
+# Exercise 01: HTML Introduction
 
 Use this [link](https://creating-coding-careers.gitbook.io/the-basics/) to follow along on GitBook
 

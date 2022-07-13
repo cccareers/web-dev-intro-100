@@ -1,4 +1,4 @@
-# Exercise 2: Semantic HTML
+# Exercise 02: Semantic HTML
 
 ## Semantics
 

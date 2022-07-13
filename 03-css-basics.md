@@ -1,4 +1,4 @@
-# Exercise 3: CSS Basics
+# Exercise 03: CSS Basics
 
 ## CSS: Cascading Style Sheets
 
