@@ -4,7 +4,7 @@
 
 This exercise explain how to read an anolog clock, then we will build one together.
 
-![Clock](./images/clock.png)
+![Clock](images/clock.png)
 
 ---
 
