@@ -57,10 +57,106 @@ Any sort of content can be put inside the `<div>` tag!
 
 Note: By default, browsers always place a line break before and after the `<div>` element.
 
-You may have noticed that clock face and hands are `<div>` elements. As we mentioned before `<div>` elements are containers. By default they're shapeless but by using CSS we can style them to look like whatever we want. You may have also noticed that each `<div>` element has a `class` attribute.
+You may have noticed that clock's face and hands are `<div>` elements. As we mentioned before `<div>` elements are containers. By default they're shapeless but by using CSS we can style them to look like whatever we want. You may have also noticed that each `<div>` element has a `class` attribute.
 
 Multiple HTML elements can share the same class name.
 
-The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.
+The class attribute is often points to a class name in a style sheet.
 
 ---
+
+Now let's let's add our style. Copy the following code snippet and paste it in the CSS section of your Code Pen.
+
+```css
+html {
+  background-color:yellow;
+  background-size: cover;
+  font-family: "helvetica neue";
+  text-align: center;
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-size: 2rem;
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.clock {
+  width: 30rem;
+  height: 30rem;
+  border: 2px solid white ;
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;
+  padding: 6rem;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
+    inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px); /* account for the height of the clock hands */
+}
+
+.hand {
+  width: 50%;
+  height: 6px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+The CSS rules above determine the layout of the background, the clock face, the hand, etc.
+
+Modify the following rules0.
+
+1. Find the CSS rule that makes the background color yellow, and change it to blue.
+
+2. In the `clock` class, change the `border` from `2px` to `20px`.
+
+3. Change the color of the hands to black instead of white.
+
+Good job.
+
+```
+
+Now let's add the javascript.
+
+```js
+   /* Hands*/
+      const secondHand = document.querySelector(".second-hand");
+      const minuteHand = document.querySelector(".min-hand");
+      const hourHand = document.querySelector(".hour-hand");
+      /* End of Hands*/
+      /* Time Function*/
+      function setDate() {
+        const now = new Date();
+        const seconds = now.getSeconds();
+        const secondsDegrees = (seconds / 60) * 360 + 90;
+        secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+
+        const minutes = now.getMinutes();
+        const minutesDegrees = (minutes / 60) * 360 + 90;
+        minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
+
+        const hours = now.getHours();
+        const hoursDegrees = (hours / 12) * 360 + 90;
+        hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
+      }
+
+      setInterval(setDate, 1000);
+
+      setDate();
+```
+
+Javascript adds the functionality to our projects and allows it to work as intended.
