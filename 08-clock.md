@@ -4,7 +4,7 @@
 
 This exercise explain how to read an anolog clock, then we will build one together.
 
-![Clock](./images/clock.png)
+![Clock](./images/clock2.png)
 
 ---
 
@@ -118,13 +118,15 @@ body {
 
 The CSS rules above determine the layout of the background, the clock face, the hand, etc.
 
-Modify the following rules0.
+Modify the following rules.
 
 1. Find the CSS rule that makes the background color yellow, and change it to blue.
 
 2. In the `clock` class, change the `border` from `2px` to `20px`.
 
 3. Change the color of the hands to black instead of white.
+
+4. Change the hour hand to red so it will be easier to identify.
 
 Good job.
 
