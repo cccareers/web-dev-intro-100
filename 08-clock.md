@@ -2,19 +2,17 @@
 
 ## Description
 
-This exercise explain how to read an anolog clock, then we will build one together.
+This exercise explains how to read an analog clock, then we will build one together.
 
-![Clock](images/clock.png)
+![](.gitbook/assets/clock2.png)
 
----
+## How to read an analog clock
 
-## How to read an anolog clock
-
-Reading an anolog clock can be dificult if you've never done so before, but it doesn't take long to learn. Let's start by taking a look at the parts of a clock. An anolog clock consists of 3 main parts, the short hand (Hour Hand) and the long hand (Minutes Hand), and a Seconds Hand. Clock will often have numbers on the face to make it easier to read, but this is optional and you may com across a clock without numbers.
+Reading an analog clock can be difficult if you've never done so before, but it doesn't take long to learn. Let's start by taking a look at the parts of a clock. An analog clock consists of 3 main parts, the short hand (Hour Hand) and the long hand (Minutes Hand), and a Seconds Hand. Clocks will often have numbers on the face to make it easier to read, but this is optional and you may come across a clock without numbers.
 
 [How to Read an Analog Clock](https://www.youtube.com/watch?v=p5gXD70Fubc)
 
----
+***
 
 Now that you understand how to read a clock, let's build one.
 
@@ -24,7 +22,7 @@ Now that you understand how to read a clock, let's build one.
 
 ### Steps
 
-1). Let start by adding some HTML. Copy and paste the following code snippet into the area on Code Pen, labeled `HTML`.
+1\). Let's start by adding some HTML. Copy and paste the following code snippet into the area on Code Pen, labeled `HTML`.
 
 ```html
 <div class="clock">
@@ -34,7 +32,6 @@ Now that you understand how to read a clock, let's build one.
         <div class="hand second-hand"></div>
       </div>
     </div>
-
 ```
 
 Let's review some of the elements used in this code snippet.
@@ -49,7 +46,7 @@ Let's review some of the elements used in this code snippet.
 
 The `<div>` tag defines a division or a section in an HTML document.
 
-The `<div>` tag is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript.
+The `<div>` tag is used as a container for HTML elements - which are then styled with CSS or manipulated with JavaScript.
 
 The `<div>` tag is easily styled by using the class or id attribute.
 
@@ -57,17 +54,15 @@ Any sort of content can be put inside the `<div>` tag!
 
 Note: By default, browsers always place a line break before and after the `<div>` element.
 
-You may have noticed that clock's face and hands are `<div>` elements. As we mentioned before `<div>` elements are containers. By default they're shapeless but by using CSS we can style them to look like whatever we want. You may have also noticed that each `<div>` element has a `class` attribute.
+You may have noticed that the clock's face and hands are `<div>` elements. As we mentioned before `<div>` elements are containers. By default they're shapeless but by using CSS we can style them to look like whatever we want. You may have also noticed that each `<div>` element has a `class` attribute.
 
 Multiple HTML elements can share the same class name.
 
-The class attribute is often points to a class name in a style sheet. 
+The class attribute often points to a class name in a style sheet.
 
----
+***
 
-Now let's let's add our style. Copy the following code snippet and paste it in the CSS section of your Code Pen.
-
-
+Now let's add our style. Copy the following code snippet and paste it into the CSS section of your Code Pen.
 
 ```css
 html {
@@ -129,8 +124,8 @@ Modify the following rules0.
 3. Change the color of the hands to black instead of white.
 
 Good job.
-
 ```
+
 Now let's add the javascript.
 
 ```js
@@ -160,4 +155,4 @@ Now let's add the javascript.
       setDate();
 ```
 
-Javascript adds the functionality to our projects and allows it to work as intended.
+Javascript adds functionality to our projects and allows them to work as intended.
