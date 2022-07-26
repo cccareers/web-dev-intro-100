@@ -4,7 +4,7 @@
 
 This exercise explains how to read an analog clock, then we will build one together.
 
-![](.gitbook/assets/clock2.png)
+![Clock](.gitbook/assets/clock2.png)
 
 ## How to read an analog clock
 
@@ -112,6 +112,7 @@ body {
   transition: all 0.05s;
   transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
+```
 
 The CSS rules above determine the layout of the background, the clock face, the hand, etc.
 
@@ -126,7 +127,6 @@ Modify the following rules.
 4. Change the hour hand to red so it will be easier to identify.
 
 Good job.
-```
 
 Now let's add the javascript.
 
