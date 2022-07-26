@@ -183,9 +183,12 @@ font-family: 'Rampart One'
 }
 ```
 
-Now let's add the javascript.
+***
+
+Now let's add the javascript. Our `playSound` function will be triggered by an event or `(e)` which is the pressing of the key.
 
 ```js
+
    function playSound(e) {
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
   const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
@@ -200,11 +203,7 @@ function removeTransition(e){
   this.classList.remove('playing');
 };
 
-const keys = document.querySelectorAll('.key');
-
-keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+const keys = document.querySelectorAll('.key');keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 
 window.addEventListener('keydown', playSound);
 ```
-
-Javascript adds functionality to our projects and allows them to work as intended.
