@@ -2,7 +2,7 @@
 
 ## Description
 
-As you know, HTML provides the content for the page. CSS provides the layout and structure of the page. Javascript provides the functionality. We write functions to carry out the set of actions we want completed. In this exercise we'll learn about writing functions using [Karel the Robot](https://stanford.edu/~cpiech/karel/ide.html) from Stanford. Karel is an IDE (Intergrated Development Environment), that allows us to write the code that make the robot carry out a function.
+As you know, HTML provides the content for the page. CSS provides the layout and structure of the page. Javascript provides the functionality. We write functions to carry out the set of actions we want completed. In this exercise we'll learn about writing functions using [Karel the Robot](https://stanford.edu/~cpiech/karel/ide.html) from Stanford. Karel is an IDE (Intergrated Development Environment), that allows us to write the code that makes the robot carry out a function.
 
 ![Karel](./images/kareltherobot.png)
 
@@ -24,6 +24,7 @@ The example above is a function declaration. To create a function, you first wri
 
 ```js
 (){
+
 }
 ```
 
@@ -31,7 +32,7 @@ The space between the two curly brackets is where your code will go. The code wi
 
 ![Runs Code](./images/runscode2.png)
 
-Then the robot will execute the functions.
+This executes the function.
 
 ![Karel](./images/karel.png)
 
@@ -55,7 +56,7 @@ There's also
 ---
 
 Now let's give it a try.
-1\) Let's start by changing the `World` to `4 x 4` to make it a bit simplier.
+1\) Let's start by changing the `World` to `4 x 4` to make it easier to work with.
 2\) We'll move Karel to the top-right corner of the page, by adding the following lines in the function and clicking Run.
 
 ```
@@ -68,7 +69,11 @@ move();
 move();
 ```
 
-Great. Now get back to the starting position in the bottom left corner, but  go diagonally.
+Great!
+
+Now try this on your own.
+
+Get back to the starting position in the bottom left corner, but  go diagonally.
 
 ---
 
