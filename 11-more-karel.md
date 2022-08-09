@@ -1,4 +1,4 @@
-# EXERCISE 11: Karel the Robot
+# EXERCISE 11: More Karel
 
 ## Description
 
