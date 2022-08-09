@@ -4,7 +4,7 @@
 
 Now that you are familiar with Karel and it's commands, your objective is to modify the function to complete a set of exercises.
 
-If you haven't completed the previous lesson which introduces Karel and how to use it, go [back](#) and do so.
+If you haven't completed the previous lesson which introduces Karel and how to use it, go [back](https://creating-coding-careers.gitbook.io/the-basics/10-karel-the-robot) and do so.
 
 We mentioned before that Karel has a set of commands that it follows.
 
