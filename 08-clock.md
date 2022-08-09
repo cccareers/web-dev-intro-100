@@ -4,7 +4,7 @@
 
 This exercise explains how to read an analog clock, then we will build one together.
 
-![Clock](.gitbook/assets/clock2.png)
+![Clock](images/clock2.png)
 
 ## How to read an analog clock
 
@@ -119,11 +119,8 @@ The CSS rules above determine the layout of the background, the clock face, the 
 Modify the following rules.
 
 1. Find the CSS rule that makes the background color yellow, and change it to blue.
-
 2. In the `clock` class, change the `border` from `2px` to `20px`.
-
 3. Change the color of the hands to black instead of white.
-
 4. Change the hour hand to red so it will be easier to identify.
 
 Good job.
