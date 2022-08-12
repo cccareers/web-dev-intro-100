@@ -10,4 +10,4 @@
 * [EXERCISE 08: Clock Workshop](08-clock.md)
 * [EXERCISE 09: eDrums Workshop](09-edrum-set.md)
 * [EXERCISE 10: Karel the Robot Workshop](10-karel-the-robot.md)
-* [EXERCISE 11: More Karel](11-more-karel.md)
+* [EXERCISE 11: Karel Advanced](11-karel-advanced.md)
