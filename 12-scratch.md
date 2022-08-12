@@ -1,6 +1,20 @@
-# EXERCISE 11: More Karel
+# EXERCISE 12: Scratch
 
 ## Description
+
+Scratch is a high-level block-based visual programming language and website aimed primarily at children as an educational tool for programming, with a target audience of ages 8 to 16. Users on the site, called Scratchers, can create projects on the website using a block-like interface
+
+
+
+
+
+
+
+
+
+
+
+
 
 Now that you are familiar with Karel and it's commands, your objective is to modify the function to complete a set of exercises.
 
