@@ -1,21 +1,16 @@
-# EXERCISE 12: Scratch
+# EXERCISE 12: Scratch Workshop
 
 ## Description
 
-This Exercise introduces [Scratch](https://scratch.mit.edu/)
-Scratch is a high-level block-based visual programming language and website aimed primarily at children as an educational tool for programming, with a target audience of ages 8 to 16. Users on the site, called Scratchers, can create projects on the website using a block-like interface
+This exercise introduces [Scratch](https://scratch.mit.edu/) explains how we can quickly build projects using it.
 
+### What is Scratch?
 
+![Scratch Program](./.gitbook/assets/scratch.jpg)
 
+Scratch is a educational tool designed to teach students the fundamentals of programming. It consists of a high-level block-based visual programming language and website and was createds by MIT. Students are able to create projects on the website using a block-like interface.
 
-
-
-
-
-
-
-
-
+---
 
 Now that you are familiar with Karel and it's commands, your objective is to modify the function to complete a set of exercises.
 

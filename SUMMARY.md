@@ -11,4 +11,4 @@
 * [EXERCISE 09: eDrums Workshop](09-edrum-set.md)
 * [EXERCISE 10: Karel the Robot Workshop](10-karel-the-robot.md)
 * [EXERCISE 11: Karel Advanced](11-karel-advanced.md)
-* [EXERCISE 12: Scratch](12-scratch.md)
+* [EXERCISE 12: Scratch Workshop](12-scratch-workshop.md)
