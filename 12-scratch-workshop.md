@@ -6,7 +6,7 @@ This exercise introduces [Scratch](https://scratch.mit.edu/). Let's gets familia
 
 ![Flying Cat](./.gitbook/assets/flying-cat.png)
 
-### What is Scratch?
+## What is Scratch?
 
 ![Scratch Program](./.gitbook/assets/scratch.jpg)
 
@@ -14,9 +14,9 @@ Scratch is a educational tool designed to teach students the fundamentals of pro
 
 ---
 
-### Let's get started
+## Let's get started
 
-#### Choose a Sprite and make it fly
+### Choose a Sprite and make it fly
 
 1\. Go to [Scratch](https://scratch.mit.edu/) and click the Start Creating button.
 
@@ -82,7 +82,7 @@ Awesome, Now when you click the `green flag` you chracter will always reset to i
 
 ---
 
-#### Add the Obstacle
+### Add the Obstacle
 
 Now lets add an obstacle to make our game a little challenging.
 
@@ -114,7 +114,7 @@ Great! Your game technically works, but you can't loose. Let's add a bit more ch
 
 ---
 
-#### Stop the game
+### Stop the game
 
 1\. Go to the `Events` section and drag the `when green flag clicked` code block to the center of the page.
 
@@ -130,7 +130,7 @@ Great! Your game technically works, but you can't loose. Let's add a bit more ch
 
 ---
 
-#### Keep Score
+### Keep Score
 
 Now we need to keep score.
 
@@ -143,7 +143,7 @@ Now we need to keep score.
 ---
 Awesome! Now you have a working game. But don't stop there. Give the bonus material a try.
 
-#### Bonus
+### Bonus
 
 1\. Switch the Backdrop when the user gets a score above `10` and then again at `20`, and then again at `30`.
 
