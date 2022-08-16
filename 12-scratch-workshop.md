@@ -98,7 +98,7 @@ Now lets add an obstacle to make our game a little challenging.
 
 Whenever the `green flag` is clicked, the `Building` sprite will automatically go to that starting position.
 
-6\.  Grab the `Building` sprite and place it in the far right corner of the page, and about half way down so that only half the building will be showing.
+6\.  Grab the `Building` sprite and place it in the far left corner of the page, and about half way down so that only half the building will be showing.
 
 7\. Grab the `glide 1 secs to x: _ y: _` code block and place it in the `forever` block under the `go to x: 230 y: -100`.
 
