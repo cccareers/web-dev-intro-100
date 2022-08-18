@@ -9,13 +9,13 @@ If you haven't completed the previous lesson which introduces Karel and how to u
 We mentioned before that Karel has a set of commands that it follows.
 
 1. Move (moves Karel 1 space forward in the direction she's facing)
-2. Turn Left (turns Karal 90 degrees to the left)
+2. Turn Left (turns Karel 90 degrees to the left)
 3. Pick Beeper (Karel picks up beeper)
 4. Put Beeper (Karel puts down beeper)
 
 There's also
 
-1. Turn right (turns Karal 90 degrees to the right)
+1. Turn right (turns Karel 90 degrees to the right)
 2. Turn around (Karel turns 180 degrees)
 3. Paint Corner
 
