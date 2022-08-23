@@ -8,7 +8,7 @@ For this exercise we will review what CSS is and how we can implement it in our 
 
 Let's practice styling some sqares.
 
-1\. Go to [Code Pen](codepen.io) and click the `Start Coding` button.
+1\. Go to [Code Pen](https://codepen.io/pen/) and click the `Start Coding` button.
 
 In the ```HTML``` section create two ```div``` elements.
 
