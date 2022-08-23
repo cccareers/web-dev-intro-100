@@ -12,3 +12,4 @@
 * [EXERCISE 10: Karel the Robot Workshop](10-karel-the-robot.md)
 * [EXERCISE 11: Karel Advanced](11-karel-advanced.md)
 * [EXERCISE 12: Scratch Workshop](12-scratch-workshop.md)
+* [EXERCISE 13: CSS Review](13-css-review.md)
